@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the footer stays at the bottom */
+}
+
+header {
+    background-color: #007BFF; /* Bootstrap primary color */
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.navbar {
+    padding: 10px 20px; /* Adjust padding for navbar */
+}
+
+.navbar-brand {
+    font-size: 1.5rem; /* Larger font size for brand */
+}
+
+.navbar-nav .nav-link {
+    color: white; /* White text for links */
+    margin-left: 15px; /* Space between buttons */
+}
+
+.navbar-nav .btn {
+    margin-left: 10px; /* Space between buttons */
+}
+
+/* Main content area */
+main {
+    padding: 20px;
+    flex-grow: 1; /* Allow main to grow and fill available space */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1; /* Light gray background for footer */
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link, .navbar-nav .btn {
+        margin-left: 5px; /* Reduce spacing on smaller screens */
+        font-size: 0.9rem; /* Slightly smaller font size on mobile */
+    }
+}

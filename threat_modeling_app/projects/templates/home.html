@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2>Welcome to the Threat Modeling Application</h2>
+    <p>This application helps you identify and manage potential threats in your software projects effectively.</p>
+    
+    {% if user.is_authenticated %}
+        <p>You are logged in as {{ user.username }}. You can manage your projects from the <a href="{% url 'project_list' %}">My Projects</a> page.</p>
+    {% else %}
+        <p>Please <a href="{% url 'signup' %}">sign up</a> or <a href="{% url 'login' %}">log in</a> to get started.</p>
+    {% endif %}
+</div>
+{% endblock %}
